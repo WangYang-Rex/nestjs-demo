@@ -45,6 +45,16 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## Debug
+
+1. 启动脚本
+```bash
+$ npm run start:debug
+```
+
+2. 在VSCode中选择“Attach NestJS”配置并启动调试器。
+
+
 ## Test
 
 ```bash

@@ -9,6 +9,10 @@ export class CatsService {
     this.cats.push(cat);
   }
 
+  findOne(id: number): Cat {
+    return this.cats.find((cat) => cat.id === id);
+  }
+
   findAll(): Cat[] {
     return this.cats;
   }

@@ -6,11 +6,12 @@ import {
   HttpException,
   HttpStatus,
   Param,
+  ParseIntPipe,
   Post,
   Query,
   Req,
   Res,
-  UseFilters,
+  // UseFilters,
 } from '@nestjs/common';
 import {
   Request,
@@ -30,6 +31,11 @@ export class CatsController {
   async create(@Req() request: Request, @Body() createCatDto: CreateCatDto) {
     this.catsService.create(createCatDto);
     return 'success';
+  }
+
+  @Get(':id')
+  async findOne(@Param('id', ParseIntPipe) id: number) {
+    return this.catsService.findOne(id);
   }
 
   @Get()

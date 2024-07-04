@@ -3,11 +3,14 @@ import {
   Controller,
   Get,
   HttpCode,
+  HttpException,
+  HttpStatus,
   Param,
   Post,
   Query,
   Req,
   Res,
+  UseFilters,
 } from '@nestjs/common';
 import {
   Request,
@@ -16,8 +19,10 @@ import {
 import { CreateCatDto } from './dto/create-cat.dto';
 import { CatsService } from './cats.service';
 import { Cat } from './interfaces/cat.interface';
+// import { HttpExceptionFilter } from 'src/filters/http-exception.filter';
 
 @Controller('cats')
+// @UseFilters(HttpExceptionFilter) // @UseFilters(new HttpExceptionFilter())
 export class CatsController {
   constructor(private catsService: CatsService) {}
 
@@ -30,6 +35,17 @@ export class CatsController {
   @Get()
   async findAll(): Promise<Cat[]> {
     return this.catsService.findAll();
+  }
+
+  @Get('error')
+  async error(): Promise<Cat[]> {
+    throw new HttpException(
+      {
+        status: HttpStatus.FORBIDDEN,
+        error: 'This is a custom message',
+      },
+      HttpStatus.FORBIDDEN,
+    );
   }
 
   @Post()

@@ -30,7 +30,8 @@ export class CatsController {
   @Post()
   async create(@Req() request: Request, @Body() createCatDto: CreateCatDto) {
     this.catsService.create(createCatDto);
-    return 'success';
+    return this.catsService.findAll();
+    // return 'success';
   }
 
   @Get(':id')
@@ -76,5 +77,11 @@ export class CatsController {
   @Get('ab*')
   findAll02() {
     return 'This route uses a wildcard';
+  }
+
+  @Post('clear')
+  clear() {
+    this.catsService.clear();
+    return this.catsService.findAll();
   }
 }

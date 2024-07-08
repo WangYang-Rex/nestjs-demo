@@ -1,16 +1,49 @@
-import { MiddlewareConsumer, Module, NestModule, RequestMethod } from '@nestjs/common';
+import {
+  Dependencies,
+  MiddlewareConsumer,
+  Module,
+  NestModule,
+  // RequestMethod,
+} from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { LoggerMiddleware, logger } from './middleware/logger.middleware';
+import {
+  // LoggerMiddleware,
+  logger,
+} from './middleware/logger.middleware';
 import { CatsModule } from './controller/cats/cats.module';
 import { CatsController } from './controller/cats/cats.controller';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { DataSource } from 'typeorm';
+import { UsersModule } from './users/users.module';
+import { DogsModule } from './dogs/dogs.module';
 
+@Dependencies(DataSource)
 @Module({
-  imports: [CatsModule],
+  imports: [
+    TypeOrmModule.forRoot({
+      type: 'mysql',
+      host: 'rm-bp1da276967f735384o.mysql.rds.aliyuncs.com',
+      port: 3306,
+      username: 'wangyang',
+      password: 'Sxwy_10110013228',
+      database: 'test_db',
+      // entities: [User],
+      entities: [__dirname + '/**/*.entity{.ts,.js}'],
+      synchronize: true,
+    }),
+    CatsModule,
+    UsersModule,
+    DogsModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
 export class AppModule implements NestModule {
+  dataSource: any;
+  constructor(dataSource) {
+    this.dataSource = dataSource;
+  }
   configure(consumer: MiddlewareConsumer) {
     consumer
       // .apply(LoggerMiddleware)
@@ -20,7 +53,7 @@ export class AppModule implements NestModule {
       //   { path: 'cats', method: RequestMethod.POST },
       //   'cats/(.*)',
       // )
-      .forRoutes(CatsController);
       // .forRoutes({ path: 'cats', method: RequestMethod.ALL });
+      .forRoutes(CatsController);
   }
 }

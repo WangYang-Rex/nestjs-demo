@@ -1,0 +1,2059 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css">
+
+
+  <meta name="keywords" content="javascript,洋仔,洋洋,wangyang">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="大洋" type="application/atom+xml">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2">
+
+
+
+
+
+
+<meta name="description" content="Stay Hungry！ Stay Young！">
+<meta property="og:type" content="website">
+<meta property="og:title" content="大洋">
+<meta property="og:url" content="http://blog.html-js.site/index.html">
+<meta property="og:site_name" content="大洋">
+<meta property="og:description" content="Stay Hungry！ Stay Young！">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="大洋">
+<meta name="twitter:description" content="Stay Hungry！ Stay Young！">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://blog.html-js.site/">
+
+
+
+
+
+  <title>大洋</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?ca98d1db5559cb59848d14443c7fa5dd";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+   page-home 
+ ">
+    <div class="headband">
+      <a target="_blank" href="https://github.com/WangYang-Rex">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical->
+      </a>
+    </div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">大洋</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">专注于前端</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.html-js.site/2023/03/03/大文件上传-原理解析与实现/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="大洋">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/default_avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大洋">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2023/03/03/大文件上传-原理解析与实现/" itemprop="url">大文件上传 原理解析与实现</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-03-03T15:06:48+08:00">
+                2023-03-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2023/03/03/大文件上传-原理解析与实现/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2023/03/03/大文件上传-原理解析与实现/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="实现效果"><a href="#实现效果" class="headerlink" title="实现效果"></a>实现效果</h2><p><a href="http://log.html-js.site/index.html" target="_blank" rel="noopener">大文件上传实现demo </a></p>
+<h2 id="原理解析"><a href="#原理解析" class="headerlink" title="原理解析"></a>原理解析</h2><ul>
+<li><a href="https://juejin.cn/post/7177045936298786872?#heading-9" target="_blank" rel="noopener">面试官：你如何实现大文件上传</a></li>
+<li><a href="https://help.aliyun.com/document_detail/111265.html" target="_blank" rel="noopener">Node.js上传本地文件</a></li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.html-js.site/2023/01/29/前端基础-基础数据类型及原生方法/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="大洋">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/default_avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大洋">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2023/01/29/前端基础-基础数据类型及原生方法/" itemprop="url">前端基础-基础数据类型及原生方法</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-01-29T19:11:22+08:00">
+                2023-01-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2023/01/29/前端基础-基础数据类型及原生方法/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2023/01/29/前端基础-基础数据类型及原生方法/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="JS-数据类型"><a href="#JS-数据类型" class="headerlink" title="JS 数据类型"></a>JS 数据类型</h3><p>基础数据类型</p>
+<ul>
+<li>Number</li>
+<li>String</li>
+<li>Boolean</li>
+<li>Null</li>
+<li>Undefined</li>
+<li>Symbol</li>
+</ul>
+<p>引用数据类型</p>
+<ul>
+<li>Object</li>
+<li>Array</li>
+<li>Function</li>
+</ul>
+<p>数据结构</p>
+<ul>
+<li>Map</li>
+<li>Set</li>
+</ul>
+<h4 id="String-原生方法"><a href="#String-原生方法" class="headerlink" title="String 原生方法"></a>String 原生方法</h4><p><img src="/images/page/20230129/String.prototype.png" alt></p>
+<h4 id="Number-原生方法"><a href="#Number-原生方法" class="headerlink" title="Number 原生方法"></a>Number 原生方法</h4><p><img src="/images/page/20230129/Number.prototype.png" alt></p>
+<h4 id="Object-原生方法"><a href="#Object-原生方法" class="headerlink" title="Object 原生方法"></a>Object 原生方法</h4><p><img src="/images/page/20230129/Object.prototype.png" alt></p>
+<h5 id="Object-遍历"><a href="#Object-遍历" class="headerlink" title="Object 遍历"></a>Object 遍历</h5><h4 id="Array-原生方法"><a href="#Array-原生方法" class="headerlink" title="Array 原生方法"></a>Array 原生方法</h4><p><img src="/images/page/20230129/Array.prototype.png" alt></p>
+<h4 id="Array-遍历"><a href="#Array-遍历" class="headerlink" title="Array 遍历"></a>Array 遍历</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">// 1.for 循环</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(arr[i])</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 2.for of</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> it <span class="keyword">of</span> arr) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(it)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 3.forEach</span></span><br><span class="line">arr.forEach(<span class="function">(<span class="params">it, index, _arr</span>) =&gt;</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(it, index, _arr)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 4.map(参数为回调函数)函数，遍历数组每个元素，并回调操作，需要返回值，返回值组成新数组，原数组不变；</span></span><br><span class="line"><span class="keyword">let</span> arrMap = arr.map(<span class="function">(<span class="params">it, i</span>)=&gt;</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(it, i)</span><br><span class="line">  <span class="keyword">return</span> it+<span class="number">1</span></span><br><span class="line">&#125;)</span><br><span class="line"><span class="built_in">console</span>.log(arrMap)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 5.filter(参数为回调函数)函数：过滤通过条件的元素组成一个新数组，原数组不变；</span></span><br><span class="line"><span class="keyword">let</span> arrFilter = arr.filter(<span class="function">(<span class="params">it, i</span>)=&gt;</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(it, i)</span><br><span class="line">  <span class="keyword">return</span> it &gt; <span class="number">2</span></span><br><span class="line">&#125;)</span><br><span class="line"><span class="built_in">console</span>.log(arrFilter)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 6.some(参数为回调函数)函数，遍历数组中是否有符合条件的函数，返回布尔值；</span></span><br><span class="line"><span class="keyword">const</span> arrSome = arr.some(<span class="function">(<span class="params">it,i</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(it, i)</span><br><span class="line">  <span class="keyword">return</span> it === <span class="number">2</span></span><br><span class="line">&#125;)</span><br><span class="line"><span class="built_in">console</span>.log(arrSome)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 7.every(参数为回调函数)函数，遍历数组是否每个元素都符合条件，返回布尔值；</span></span><br><span class="line"><span class="keyword">const</span> arrEvery = arr.every(<span class="function">(<span class="params">it,i</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(it, i)</span><br><span class="line">  <span class="keyword">return</span> it &gt; <span class="number">0</span></span><br><span class="line">&#125;)</span><br><span class="line"><span class="built_in">console</span>.log(arrEvery)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 8.find()函数，数组中的每个元素都执行这个回调函数；返回第一个满足条件的元素 之后的元素就不在调用；没有符合的返回undefined；并没有改变数组的原始值。</span></span><br><span class="line"><span class="keyword">const</span> arrFind = arr.find(<span class="function">(<span class="params">it,i</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(it, i)</span><br><span class="line">  <span class="keyword">return</span> it &gt; <span class="number">2</span></span><br><span class="line">&#125;)</span><br><span class="line"><span class="built_in">console</span>.log(arrFind)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 9.reduce(),合并二维数组</span></span><br><span class="line"><span class="keyword">var</span> sum = arr.reduce(<span class="function">(<span class="params">res, it</span>)=&gt;</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(it)</span><br><span class="line">  res += it</span><br><span class="line">  <span class="keyword">return</span> res</span><br><span class="line">&#125;, <span class="number">0</span>);</span><br><span class="line"><span class="built_in">console</span>.log(sum)</span><br></pre></td></tr></table></figure>
+<h3 id="如何判断数据类型？"><a href="#如何判断数据类型？" class="headerlink" title="如何判断数据类型？"></a>如何判断数据类型？</h3><ul>
+<li>typeof xxx：能判断出number，string，undefined，boolean，object，function（null是object）</li>
+<li>Object.prototype.toString.call(xxx)：能判断出大部分类型</li>
+<li>Array.isArray(xxx)：判断是否为数组</li>
+</ul>
+<h4 id="typeof-xxx-正常够用"><a href="#typeof-xxx-正常够用" class="headerlink" title="typeof xxx 正常够用"></a>typeof xxx 正常够用</h4><p>能判断出number，string，undefined，boolean，object，function, BigInt, Synmol,<br>null判断为object: 因为底层存储为二进制 null 为000开头，与object类型一致，导致判断出错<br>array 判断为 object: 原因同上</p>
+<p><img src="/images/page/20230129/typeof.png" alt></p>
+<h4 id="Object-prototype-toString-call-xxx-强烈建议"><a href="#Object-prototype-toString-call-xxx-强烈建议" class="headerlink" title="Object.prototype.toString.call(xxx) 强烈建议"></a>Object.prototype.toString.call(xxx) 强烈建议</h4><p><img src="/images/page/20230129/object.png" alt></p>
+<h4 id="Array-isArray"><a href="#Array-isArray" class="headerlink" title="Array.isArray"></a>Array.isArray</h4><p>Array.isArray 可以判断数组</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.html-js.site/2023/01/29/前端进阶-原型链/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="大洋">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/default_avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大洋">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2023/01/29/前端进阶-原型链/" itemprop="url">前端进阶-原型链</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-01-29T19:11:01+08:00">
+                2023-01-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2023/01/29/前端进阶-原型链/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2023/01/29/前端进阶-原型链/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>对于大部分程序员来说：最重要的肯定是通过持续不断的学习，建立一个系统的知识支撑体系，使自己具备扎实的技术能力</p>
+<p>前端三座大山：闭包，原型链，作用域</p>
+<h3 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h3><p><a href="https://juejin.cn/post/7007416743215759373" target="_blank" rel="noopener">这可能是掘金讲「原型链」，讲的最好最通俗易懂的了，附练习题！</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.html-js.site/2022/11/09/【2022年】五分钟注册美区Apple-ID，手把手教，稳定且耐用！/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="大洋">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/default_avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大洋">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2022/11/09/【2022年】五分钟注册美区Apple-ID，手把手教，稳定且耐用！/" itemprop="url">【2022年】五分钟注册美区Apple ID，手把手教，稳定且耐用！</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-11-09T09:59:21+08:00">
+                2022-11-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2022/11/09/【2022年】五分钟注册美区Apple-ID，手把手教，稳定且耐用！/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2022/11/09/【2022年】五分钟注册美区Apple-ID，手把手教，稳定且耐用！/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>很多时候，中国大陆没法下载一些APP，比如Panda Vpn，需要使用美国的Apple ID，下面是教程，亲测可用</p>
+<p><a href="https://zhuanlan.zhihu.com/p/367821925" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/367821925</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.html-js.site/2022/10/28/https证书配置教程/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="大洋">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/default_avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大洋">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2022/10/28/https证书配置教程/" itemprop="url">手把手教你如何配置SSL证书开启https</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-10-28T11:31:31+08:00">
+                2022-10-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2022/10/28/https证书配置教程/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2022/10/28/https证书配置教程/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="申请-SSL-证书"><a href="#申请-SSL-证书" class="headerlink" title="申请 SSL 证书"></a>申请 SSL 证书</h2><p><img src="/images/page/20221031/ssl2.png" alt></p>
+<p>自2021年01月01日起，每个实名认证的阿里云主账号可以在一个自然年内，通过数字证书管理服务一次性领取20张免费DV单域名试用证书（以下简称免费证书）。获取免费证书后，您需要通过数字证书管理服务控制台提交证书申请。CA中心审核通过证书申请后，将为您签发免费证书。</p>
+<h3 id="步骤一：领取免费证书额度"><a href="#步骤一：领取免费证书额度" class="headerlink" title="步骤一：领取免费证书额度"></a>步骤一：领取免费证书额度</h3><p>每个自然年内，您都可以使用已完成实名认证的阿里云账号，通过数字证书管理服务一次性申领20张免费证书。如果一个自然年内20张免费证书的额度已用完，您可以付费购买和免费证书同类型的证书。</p>
+<ol>
+<li><a href="https://common-buy.aliyun.com/?spm=a2c4g.11186623.0.0.40cf4724805YgY&amp;commodityCode=cas_dv_public_cn&amp;request=%7B%22product%22%3A%22free_product%22%7D" target="_blank" rel="noopener">访问免费证书购买页</a>。</li>
+<li>选择您需要的购买数量，单击<strong>立即购买</strong>并完成支付。<br>阿里云账号只有在一个自然年内首次购买<strong>数量</strong>为<strong>20</strong>的<strong>DV单域名证书（免费试用）</strong>时，可以免费领取。<br>如果您的阿里云账号在当前自然年内已经领取过20张免费证书，则再次选购<strong>DV单域名证书（免费试用）</strong>时，需要支付对应的费用。</li>
+</ol>
+<h3 id="步骤二：提交免费证书申请"><a href="#步骤二：提交免费证书申请" class="headerlink" title="步骤二：提交免费证书申请"></a>步骤二：提交免费证书申请</h3><p>参考：<a href="https://help.aliyun.com/document_detail/156645.htm?spm=5176.smartservice_service_robot_chat_new.0.0.46493f1bVjZpqO#section-z1b-xa0-5tj" target="_blank" rel="noopener">申请免费DV单域名试用证书</a></p>
+<h2 id="部署-SSL-证书"><a href="#部署-SSL-证书" class="headerlink" title="部署 SSL 证书"></a>部署 SSL 证书</h2><h3 id="SSL证书安装指南"><a href="#SSL证书安装指南" class="headerlink" title="SSL证书安装指南"></a>SSL证书安装指南</h3><p>参考文档：<br><a href="https://help.aliyun.com/document_detail/109827.htm?spm=a2c4g.11186623.0.0.40cf4724805YgY#concept-95505-zh" target="_blank" rel="noopener">SSL证书安装指南</a><br><a href="https://help.aliyun.com/document_detail/98575.htm?spm=a2c4g.11186623.0.0.d13b4724180SLs#task-2512206" target="_blank" rel="noopener">部署证书到阿里云产品</a></p>
+<h3 id="服务器配置"><a href="#服务器配置" class="headerlink" title="服务器配置"></a>服务器配置</h3><p>1、安全组添加443端口</p>
+<h3 id="nginx配置添加ssl相关配置"><a href="#nginx配置添加ssl相关配置" class="headerlink" title="nginx配置添加ssl相关配置"></a>nginx配置添加ssl相关配置</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">#以下属性中，以ssl开头的属性表示与证书配置有关。</span><br><span class="line">server &#123;</span><br><span class="line">    listen <span class="number">443</span> ssl;</span><br><span class="line">    #配置HTTPS的默认访问端口为443。</span><br><span class="line">    #如果未在此处配置HTTPS的默认访问端口，可能会造成Nginx无法启动。</span><br><span class="line">    #如果您使用Nginx 1.15.0及以上版本，请使用listen 443 ssl代替listen 443和ssl on。</span><br><span class="line">    server_name yourdomain;</span><br><span class="line">    root html;</span><br><span class="line">    index index.html index.htm;</span><br><span class="line">    ssl_certificate cert/cert-file-name.pem;  </span><br><span class="line">    ssl_certificate_key cert/cert-file-name.key; </span><br><span class="line">    ssl_session_timeout <span class="number">5</span>m;</span><br><span class="line">    ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;</span><br><span class="line">    #表示使用的加密套件的类型。</span><br><span class="line">    ssl_protocols TLSv1.1 TLSv1.2 TLSv1.3; #表示使用的TLS协议的类型，您需要自行评估是否配置TLSv1.1协议。</span><br><span class="line">    ssl_prefer_server_ciphers on;</span><br><span class="line">    location / &#123;</span><br><span class="line">        root html;  #Web网站程序存放目录。</span><br><span class="line">        index index.html index.htm;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h2><p><img src="/images/page/20221031/ssl3.png" alt></p>
+<h3 id="配置了HTTPS之后，有可能证书链不完整-解决方案："><a href="#配置了HTTPS之后，有可能证书链不完整-解决方案：" class="headerlink" title="配置了HTTPS之后，有可能证书链不完整 解决方案："></a>配置了HTTPS之后，有可能证书链不完整 解决方案：</h3><p><img src="/images/page/20221031/ssl4.png" alt></p>
+<p><a href="https://blog.myssl.com/faq-miss-ca-certificate/" target="_blank" rel="noopener">【缺少证书链的问题和解决办法】</a></p>
+<p><img src="/images/page/20221031/ssl5.png" alt></p>
+<p>将证书放到服务器的指定位置</p>
+<p><img src="/images/page/20221031/ssl6.png" alt></p>
+<p>在nginx中修改完整ssl证书的配置</p>
+<p><img src="/images/page/20221031/ssl7.png" alt></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.html-js.site/2022/09/07/如何在大型代码仓库中删掉废弃的文件和-exports/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="大洋">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/default_avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大洋">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2022/09/07/如何在大型代码仓库中删掉废弃的文件和-exports/" itemprop="url">如何在大型代码仓库中删掉废弃的文件和 exports</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-09-07T16:28:09+08:00">
+                2022-09-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2022/09/07/如何在大型代码仓库中删掉废弃的文件和-exports/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2022/09/07/如何在大型代码仓库中删掉废弃的文件和-exports/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>CRM项目历史悠久，其中很多 文件或是 export 出去的变量 已经不再使用，非常影响维护迭代。举个例子来说，后端问你：“某某接口统计一下某接口是否还有使用？”你在项目里一搜，好家伙，还有好几处使用呢，结果那些定义或文件是从未被引入的，这就会误导你们去继续维护这个文件或接口，影响迭代效率。</p>
+</blockquote>
+<h2 id="unimported"><a href="#unimported" class="headerlink" title="unimported"></a>unimported</h2><p><a href="https://github.com/smeijer/unimported" target="_blank" rel="noopener">unimported</a> ： Find unused source files in javascript / typescript projects.</p>
+<h3 id="原理解析："><a href="#原理解析：" class="headerlink" title="原理解析："></a>原理解析：</h3><p>思路1：</p>
+<ul>
+<li>与webpack打包类似，遍历整个项目的所有文件，找出所有的文件目录及依赖关系</li>
+<li>找出没有被其他文件所引用的文件，就表示是unused source files</li>
+</ul>
+<p>思路2：</p>
+<ul>
+<li>与webpack打包类似，遍历整个项目的所有文件，找出所有的文件目录及依赖关系 treeA</li>
+<li>通过入口文件 index.tsx 开始查找所有用到的文件及依赖关系 treeB</li>
+<li>比较treeA 与 treeB，找出 unused source files</li>
+</ul>
+<h3 id="实践"><a href="#实践" class="headerlink" title="实践"></a>实践</h3><p><img src="/images/page/2022/0927/1.png" alt></p>
+<p>1、当前文件是否被 imported，同理 引用当前文件的文件是否 被 imported<br>2、当前文件中 import 的文件 是否需要同时被 注释/删除？<br>3、确认当前文件 及 相关联的文件都处理完成之后，决定是否需要注释/删除</p>
+<h2 id="deadfile"><a href="#deadfile" class="headerlink" title="deadfile"></a>deadfile</h2><p><a href="https://www.npmjs.com/package/deadfile" target="_blank" rel="noopener">deadfile</a>   Simple util to find deadcode and unused files in any JavaScript project (ES5, ES6, React, Vue, …)</p>
+<p>实际使用感受：没有正确找出 deadcode and unused files，可能是使用的姿势不对…有待研究…</p>
+<h2 id="ts-unused-exports"><a href="#ts-unused-exports" class="headerlink" title="ts-unused-exports"></a>ts-unused-exports</h2><p><a href="https://www.npmjs.com/package/ts-unused-exports" target="_blank" rel="noopener">ts-unused-exports</a>   finds unused exported symbols in your Typescript project.</p>
+<h2 id="no-unused-export"><a href="#no-unused-export" class="headerlink" title="no-unused-export"></a>no-unused-export</h2><p><a href="https://www.npmjs.com/package/no-unused-export" target="_blank" rel="noopener">no-unused-export</a>  A CLI tool to check whether exported things in a module is used by other modules.</p>
+<h2 id="ts-prune"><a href="#ts-prune" class="headerlink" title="ts-prune"></a>ts-prune</h2><p><a href="https://github.com/nadeesha/ts-prune#readme" target="_blank" rel="noopener">ts-prune</a>  Find potentially unused exports in your Typescript project with zero configuration.</p>
+<h2 id="depcheck"><a href="#depcheck" class="headerlink" title="depcheck"></a>depcheck</h2><p><a href="https://www.npmjs.com/package/depcheck" target="_blank" rel="noopener">depcheck</a> Depcheck is a tool for analyzing the dependencies in a project to see: how each dependency is used, which dependencies are useless, and which dependencies are missing from package.json.</p>
+<h2 id="拓展："><a href="#拓展：" class="headerlink" title="拓展："></a>拓展：</h2><p>写一个工具，能够自动甄别 unused source files 并进行注释 或者 删除</p>
+<p>参考：<a href="https://juejin.cn/post/6995371411019710500#comment" target="_blank" rel="noopener">如何在大型代码仓库中删掉 6w 行废弃的文件和 exports？</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.html-js.site/2022/08/23/应用性能-前端监控/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="大洋">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/default_avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大洋">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2022/08/23/应用性能-前端监控/" itemprop="url">应用性能-前端监控</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-08-23T11:40:44+08:00">
+                2022-08-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2022/08/23/应用性能-前端监控/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2022/08/23/应用性能-前端监控/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><a href="https://juejin.cn/post/7010647775880708133" target="_blank" rel="noopener">应用性能前端监控，字节跳动这些年经验都在这了</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.html-js.site/2022/08/18/浅谈前端工程化/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="大洋">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/default_avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大洋">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2022/08/18/浅谈前端工程化/" itemprop="url">浅谈前端工程化</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-08-18T16:07:58+08:00">
+                2022-08-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2022/08/18/浅谈前端工程化/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2022/08/18/浅谈前端工程化/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>前端工程化每个人都有不一样的理解，也没有一个权威和标准的定义，只要我们清楚为什么要工程化和工程化的意义那么具体的定义就变得不那么重要了。</p>
+<p><img src="/images/page/20220818/1.jpeg" alt></p>
+<p>首先前端工程化是把软件工程相关的方法和思想应用到前端开发中。</p>
+<p><strong>狭义上的理解</strong>：将开发阶段的代码发布到生产环境，包含：构建，分支管理，自动化测试，部署</p>
+<p><strong>广义上理解</strong>：前端工程化应该包含从编码开始到发布，运行和维护阶段</p>
+<p>也有人把 <strong>前端工程化</strong> 等同于 <strong>效率工程</strong></p>
+<p>认为一切能提升前端开发效率、提高前端应用质量的方法和工具都是前端工程化，我觉得这么理解也是没有问题的，提升开发效率、提升产品质量、降低开发难度、降低企业成本应该是工程化的意义所在。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2022/08/18/浅谈前端工程化/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.html-js.site/2022/08/18/JS数据-对象遍历/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="大洋">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/default_avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大洋">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2022/08/18/JS数据-对象遍历/" itemprop="url">JS数据&对象遍历</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-08-18T14:24:29+08:00">
+                2022-08-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2022/08/18/JS数据-对象遍历/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2022/08/18/JS数据-对象遍历/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="JS数组遍历"><a href="#JS数组遍历" class="headerlink" title="JS数组遍历"></a>JS数组遍历</h3><p>JS的数组的遍历方式有很多，每个的功能又不尽相同，因此想好好地整理一下它们之间的区别。这里只列举数组自带的API，主要有forEach、filter、map、reduce、some、every.</p>
+<h4 id="1-循环遍历"><a href="#1-循环遍历" class="headerlink" title="1.循环遍历"></a>1.循环遍历</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">2</span>];</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">  onsole.log(arr[i]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="2-for-of-方法"><a href="#2-for-of-方法" class="headerlink" title="2.for of 方法"></a>2.for of 方法</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> item <span class="keyword">of</span> arr) &#123;</span><br><span class="line">  item 遍历的数组的元素</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="3-forEach"><a href="#3-forEach" class="headerlink" title="3.forEach"></a>3.forEach</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">2</span>];</span><br><span class="line">arr.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">item,index,self</span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(element);</span><br><span class="line">  item 遍历出的每一个元素</span><br><span class="line">  index 元素对应的下标</span><br><span class="line">  self 数组本身</span><br><span class="line">  无返回值</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>forEach几乎是最常用的遍历数组的方法了，forEach()被调用时不会直接改变原数组，没有返回值，也无法终止或者跳出。</p>
+<h4 id="4-map"><a href="#4-map" class="headerlink" title="4.map"></a>4.map</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">2</span>]</span><br><span class="line"><span class="keyword">let</span> arrMap = arr.map(<span class="function">(<span class="params">element, index, array</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(element)</span><br><span class="line">    <span class="keyword">return</span> element * <span class="number">2</span></span><br><span class="line">&#125;)</span><br><span class="line"><span class="built_in">console</span>.log(arr);</span><br><span class="line"><span class="built_in">console</span>.log(arrMap);</span><br></pre></td></tr></table></figure>
+<p>map和forEach类似，被调用时不修改数组本身，但是会返回一个新数组。</p>
+<h4 id="5-filter"><a href="#5-filter" class="headerlink" title="5.filter"></a>5.filter</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">2</span>]</span><br><span class="line"><span class="keyword">let</span> arrFilter = arr.filter(<span class="function">(<span class="params">element, index, array</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> element &gt; <span class="number">3</span>;</span><br><span class="line">&#125;)</span><br><span class="line"><span class="built_in">console</span>.log(arrFilter);</span><br></pre></td></tr></table></figure>
+<p>filter顾名思义就是过滤，因此数组的filter用来筛选符合条件的值。filter 不会直接改变原数组，它返回过滤后的新数组。</p>
+<h4 id="6-reduce"><a href="#6-reduce" class="headerlink" title="6.reduce"></a>6.reduce</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">2</span>]</span><br><span class="line"><span class="keyword">let</span> arrReduce = arr.reduce(<span class="function">(<span class="params">accumulator, currentValue, currentIndex, array</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"accumulator:"</span>+accumulator);</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"currentValue:"</span>+currentValue);</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"currentIndex:"</span>+currentIndex);</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"array:"</span>);</span><br><span class="line">    <span class="built_in">console</span>.dir(array);</span><br><span class="line">    <span class="keyword">return</span> accumulator + currentValue;</span><br><span class="line">&#125;)</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"arrReduce:"</span>+arrReduce);</span><br></pre></td></tr></table></figure>
+<p>reduce和前面的3个循环不同，它的参数里有一个累加器的概念，并且有没有initialValue执行的次数也会有差别。为此整理了一个reduce的执行记录。<br>首先是没有initialValue的情况：<br><img src="/images/page/2022/0819/1.png" alt></p>
+<p>如果有initialValue，那如上的函数这样改写：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">2</span>]</span><br><span class="line"><span class="keyword">let</span> arrReduce = arr.reduce(<span class="function">(<span class="params">accumulator, currentValue, currentIndex, array</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"accumulator:"</span>+accumulator);</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"currentValue:"</span>+currentValue);</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"currentIndex:"</span>+currentIndex);</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"array:"</span>);</span><br><span class="line">    <span class="built_in">console</span>.dir(array);</span><br><span class="line">    <span class="keyword">return</span> accumulator + currentValue;</span><br><span class="line">&#125;,<span class="number">5</span>)</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"arrReduce:"</span>+arrReduce);</span><br></pre></td></tr></table></figure>
+<p><img src="/images/page/2022/0819/2.png" alt></p>
+<p>理解了reduce的执行过程就知道reduce的具体功用是什么了，MDN官方给出了如下几个场景:求和、计算单元素次数、按顺序执行promise、功能性管道等。</p>
+<h4 id="7-some"><a href="#7-some" class="headerlink" title="7.some"></a>7.some</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">2</span>]</span><br><span class="line"><span class="keyword">let</span> arrSome = arr.some(<span class="function">(<span class="params">element,index,array</span>) =&gt;</span> &#123;</span><br><span class="line">   <span class="keyword">return</span> element&gt;<span class="number">4</span></span><br><span class="line">&#125;)</span><br><span class="line"><span class="built_in">console</span>.log(arr)</span><br><span class="line"><span class="built_in">console</span>.log(arrSome);</span><br></pre></td></tr></table></figure>
+<p>some遍历数组找寻符合条件的，找到了返回true，遍历完毕没有找到返回false。</p>
+<h4 id="8-every"><a href="#8-every" class="headerlink" title="8.every"></a>8.every</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">2</span>]</span><br><span class="line"><span class="keyword">let</span> arrEvery = arr.every(<span class="function">(<span class="params">element,index,array</span>) =&gt;</span> &#123;</span><br><span class="line">   <span class="keyword">return</span> element&lt;<span class="number">10</span></span><br><span class="line">&#125;)</span><br><span class="line"><span class="built_in">console</span>.log(arr)</span><br><span class="line"><span class="built_in">console</span>.log(arrEvery);</span><br></pre></td></tr></table></figure>
+<p>every遍历数组检查符合条件的，有不符合立即返回false，遍历完毕全符合才返回true。</p>
+<p>以上所列举的方法都不会改变原数组，遍历范围在第一次执行之后就已经确定，在callback中如果改变了数组，也不会生效。每一个API背后的运用场景MDN上都有详细的举例，如果想要有更高阶的运用就需要工作积累了。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.html-js.site/2022/03/22/JS高阶编程/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="大洋">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/default_avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大洋">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2022/03/22/JS高阶编程/" itemprop="url">JS高阶编程</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-03-22T17:50:34+08:00">
+                2022-03-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2022/03/22/JS高阶编程/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2022/03/22/JS高阶编程/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/default_avatar.jpg" alt="大洋">
+          <p class="site-author-name" itemprop="name">大洋</p>
+           
+              <p class="site-description motion-element" itemprop="description">Stay Hungry！ Stay Young！</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">113</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">57</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/WangYang-Rex" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                    
+                      GitHub
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/u/2690568063/" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                    
+                      Weibo
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="617418875" target="_blank" title="QQ">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      QQ
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="mailto:617418875@qq.com" target="_blank" title="Mail">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      Mail
+                    
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              友链
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://http://moshui.site/" title="moxhuis" target="_blank">moxhuis</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://indexof.site/" title="indexof" target="_blank">indexof</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://xiaoqiang730730.github.io/" title="xiaoqiang" target="_blank">xiaoqiang</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy;  2016 - 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">大洋</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+<div class="busuanzi-count">
+  <!--<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>-->
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  
+    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"html-js"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

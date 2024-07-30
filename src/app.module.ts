@@ -15,8 +15,9 @@ import { CatsModule } from './controller/cats/cats.module';
 import { CatsController } from './controller/cats/cats.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { DataSource } from 'typeorm';
-import { UsersModule } from './users/users.module';
-import { DogsModule } from './dogs/dogs.module';
+import { UsersModule } from './controller/users/users.module';
+import { DogsModule } from './controller/dogs/dogs.module';
+import { SlinkModule } from './controller/slink/slink.module';
 
 @Dependencies(DataSource)
 @Module({
@@ -35,6 +36,7 @@ import { DogsModule } from './dogs/dogs.module';
     CatsModule,
     UsersModule,
     DogsModule,
+    SlinkModule,
   ],
   controllers: [AppController],
   providers: [AppService],

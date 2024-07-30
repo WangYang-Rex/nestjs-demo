@@ -68,6 +68,11 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+
+## 访问
+
+此命令启动 HTTP 服务监听定义在 src/main.ts 文件中定义的端口号。在应用程序运行后, 打开浏览器并访问 http://localhost:3000/。 你应该看到 Hello world! 信息。
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).

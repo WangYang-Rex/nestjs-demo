@@ -30,18 +30,24 @@ export class CatsController {
   @Post()
   async create(@Req() request: Request, @Body() createCatDto: CreateCatDto) {
     this.catsService.create(createCatDto);
-    return this.catsService.findAll();
+    return {
+      data: this.catsService.findAll(),
+    };
     // return 'success';
   }
 
   @Get(':id')
   async findOne(@Param('id', ParseIntPipe) id: string) {
-    return this.catsService.findOne(id);
+    return {
+      data: this.catsService.findOne(id),
+    };
   }
 
   @Get()
-  async findAll(): Promise<Cat[]> {
-    return this.catsService.findAll();
+  async findAll(): Promise<{ data: Cat[] }> {
+    return {
+      data: this.catsService.findAll(),
+    };
   }
 
   @Get('error')
